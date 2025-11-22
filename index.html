@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kelas Mengaji Miera Jannah</title>
+  <meta name="description" content="Kelas Mengaji Miera Jannah - setiap Jumaat 7:00-9:00pm. Yuran RM30 sebulan. Daftar sekarang!" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico">
+  <meta name="theme-color" content="#155e75">
+  <meta property="og:title" content="Kelas Mengaji Miera Jannah">
+  <meta property="og:description" content="Kelas Mengaji Miera Jannah - setiap Jumaat 7:00-9:00pm. Yuran RM30 sebulan. Daftar sekarang!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://asyrafahmi.github.io/miera-jannah-website/">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* Mobile-first responsive CSS */
+    :root{
+      --accent:#155e75; /* teal-ish */
+      --accent-2:#0f172a;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --glass: rgba(255,255,255,0.85);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#0f172a;background:linear-gradient(180deg,#f8fafc, #eef2ff)}
+    .container{max-width:980px;margin:0 auto;padding:20px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+
+    .hero{background:linear-gradient(90deg, rgba(21,94,117,0.06), rgba(15,23,42,0.03));border-radius:12px;padding:18px;margin:14px 0;display:flex;gap:16px;align-items:center}
+    .hero .left{flex:1}
+    .badge{display:inline-block;background:var(--accent);color:white;padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
+
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    .card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(12,15,20,0.06)}
+    .small{font-size:13px;color:var(--muted)}
+
+    ul.info{list-style:none;padding:0;margin:8px 0 0}
+    ul.info li{padding:8px 0;border-bottom:1px dashed #e6eef7}
+
+    .cta{display:flex;gap:8px;margin-top:10px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(15,23,42,0.06);color:var(--accent-2)}
+
+    .instructors{display:flex;flex-direction:column;gap:10px}
+    .instructor{display:flex;gap:12px;align-items:center}
+    .avatar{width:60px;height:60px;border-radius:12px;background:#e6eef7;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+
+    .schedule{display:flex;flex-direction:column;gap:6px}
+    .row{display:flex;justify-content:space-between;align-items:center}
+
+    footer{margin:18px 0 40px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* big screens */
+    @media(min-width:780px){
+      .grid{grid-template-columns:2fr 1fr}
+      h1{font-size:24px}
+      .hero{padding:26px}
+      .instructors{gap:14px}
+      .avatar{width:72px;height:72px;border-radius:14px}
+    }
+
+    /* accessibility focus */
+    a:focus{outline:3px solid rgba(21,94,117,0.18);outline-offset:3px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">MJ</div>
+        <div>
+          <h1>KELAS MENGAJI MIERA JANNAH</h1>
+          <p class="lead">Tempat terhad — 3 slot tambahan dibuka! Setiap Jumaat, 7:00 - 9:00pm</p>
+        </div>
+      </div>
+      <div>
+        <span class="badge">RM 30 / bulan</span>
+      </div>
+    </header>
+
+    <main class="hero card" role="main">
+      <div class="left">
+        <h2 style="margin:0 0 6px">ALHAMDULILLAH! Kami BUKA 3 SLOT TAMBAHAN 🎉</h2>
+        <p class="small">Jangan lepaskan peluang belajar ilmu Al-Quran. Lokasi: D'Sentral Bandar Seri Putra (alamat spesifik akan dimaklumkan kemudian)</p>
+
+        <ul class="info" aria-label="Maklumat kelas">
+          <li><strong>Hari:</strong> Setiap Hari Jumaat</li>
+          <li><strong>Masa:</strong> 7:00 - 9:00pm</li>
+          <li><strong>Yuran:</strong> RM 30 Sebulan (1 orang)</li>
+          <li><strong>Tempat:</strong> D'Sentral Bandar Seri Putra</li>
+        </ul>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="tel:+60148035375">Daftar / WhatsApp: Nadiah</a>
+          <a class="btn btn-ghost" href="#schedule">Lihat Tentatif</a>
+        </div>
+      </div>
+
+      <div style="width:260px;min-width:160px">
+        <!-- YouTube short -> replaced with link + preview -->
+        <div style="border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(12,15,20,0.06)">
+          <iframe width="100%" height="160" src="https://www.youtube.com/embed/z8UZhUIyUcA?si=oIoqHfXfNkKCpmMo" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="small" style="margin-top:8px">Hanya 3 slot sahaja! Daftar segera sebelum penuh.</p>
+      </div>
+    </main>
+
+    <section id="schedule" class="grid" style="margin-top:14px">
+      <div class="card">
+        <h3>Tentatif / Jadual</h3>
+        <div class="schedule">
+          <div class="row"><span>7:00 pm</span><span>mengaji</span></div>
+          <div class="row"><span>7:30 pm</span><span>solat maghrib</span></div>
+          <div class="row"><span>7:45 pm</span><span>mengaji</span></div>
+          <div class="row"><span>8:30 pm</span><span>tajwid / tadabur / sirah</span></div>
+          <div class="row"><span>8:45 pm</span><span>solat isyak</span></div>
+          <div class="row"><span>9:00 pm</span><span>bersurai</span></div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3>Tenaga Pengajar</h3>
+        <div class="instructors">
+          <div class="instructor">
+            <div class="avatar">AF</div>
+            <div>
+              <strong>Muhamad Asyraf Fahmi bin Mohd Saiful Hazmi</strong>
+              <div class="small">Kelulusan: Pensijilan Tahfiz Darul Quran (JAKIM-UNITEN), Sijil Khatam Hafazan Al-Quran (Yayasan Terengganu)</div>
+            </div>
+          </div>
+
+          <div class="instructor">
+            <div class="avatar">NN</div>
+            <div>
+              <strong>Nur Nadiah binti Mohd Saiful Hazmi</strong>
+              <div class="small">Kelulusan: Pensijilan Tahfiz Darul Quran (JAKIM-UNITEN), Sijil Khatam Hafazan Al-Quran (JAIS)</div>
+            </div>
+          </div>
+        </div>
+
+        <hr style="margin:12px 0;border:none;border-top:1px solid #eef2f8">
+        <p class="small"><strong>Hubungi:</strong><br> Nadiah : <a href="tel:+60148035375">014-803 5375</a></p>
+        <p class="small">Nota: alamat penuh akan diberikan selepas pendaftaran.</p>
+      </aside>
+    </section>
+
+    <section style="margin-top:12px">
+      <div class="card">
+        <h3>Pemberitahuan Ringkas</h3>
+        <p>ALHAMDULILLAH! Kami BUKA 3 SLOT TAMBAHAN! Jangan lepaskan peluang ini untuk belajar ilmu Al-Quran!!</p>
+        <p><strong>Daftar segera sebelum penuh!</strong></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="small">Dibina oleh Muhamad Asyraf Fahmi. Halaman ini mesra mobil & desktop — serupa dengan laman GitHub Pages anda.</div>
+    </footer>
+  </div>
+</body>
+</html>
